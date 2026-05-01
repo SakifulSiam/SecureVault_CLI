@@ -63,14 +63,14 @@ int main()
         return 0;
     }
 
-    Vault vault(user.getUsername());
+    Vault vault(user.getUsername(), user.getPassword());
     PasswordGenerator generator;
     PasswordChecker checker;
 
     while (true)
     {
         cout << "\n===== PASSWORD MANAGER =====\n";
-
+        
         cout << "1. Add Password\n";
         cout << "2. Generate Password\n";
         cout << "3. Check Password Strength\n";

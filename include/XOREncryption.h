@@ -1,11 +1,28 @@
 #pragma once
 #include "EncryptionEngine.h"
 
-class XOREncryption : public EncryptionEngine {
+class XORCipher : public EncryptionEngine {
 private:
-    char key = 'K';
+    string key;
+
+    string xorProcess(const string& data) {
+        string result = data;
+
+        for (size_t i = 0; i < data.size(); i++) {
+            result[i] = data[i] ^ key[i % key.size()];
+        }
+
+        return result;
+    }
 
 public:
-    string encrypt(string data);
-    string decrypt(string data);
+    XORCipher(string k) : key(k) {}
+
+    string encrypt(string data) override {
+        return xorProcess(data);
+    }
+
+    string decrypt(string data) override {
+        return xorProcess(data);
+    }
 };

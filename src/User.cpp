@@ -11,10 +11,10 @@ bool User::registerUser() {
     cin >> username;
     
     cout << "Enter password: " << flush;
-    password = getPassword();
-    
+    password = inputPassword();
+    passwordHash = hash(password);
     ofstream file("data/users.txt", ios::app);
-    file << username << " " << password << endl;
+    file << username << " " << passwordHash << endl;
     
     cout << "User registered successfully!\n";
     return true;
@@ -26,15 +26,17 @@ bool User::login() {
     cout << "Username: ";
     cin >> inputUser;
     
-    cout << "Password: ";
-    inputPass = getPassword();
+    cout << "Password: " << flush;
+    inputPass = inputPassword();
+    passwordHash = hash(inputPass);
     
     ifstream file("data/users.txt");
     string fileUser, filePass;
     
     while (file >> fileUser >> filePass) {
-        if (fileUser == inputUser && filePass == inputPass) {
+        if (fileUser == inputUser && filePass == to_string(passwordHash)) {
             username = inputUser;
+            password = inputPass;
             cout << "Login successful!\n";
             return true;
         }
@@ -48,7 +50,7 @@ string User::getUsername() {
     return username;
 }
 
-string User::getPassword() {
+string User::inputPassword() {
     string password;
     char ch;
 

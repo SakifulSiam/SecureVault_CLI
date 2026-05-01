@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-class PasswordChecker {
+class PasswordChecker
+{
 public:
     string checkStrength(string password);
 };
