@@ -1,0 +1,9 @@
+cl src/*.cpp -Iinclude -o Password_Manager
+.\Password_Manager.exe
+
+things to add
+Wholefile encryption
+Input validation
+Username storage
+Oneway user password encryption
+encrypt user passwords with their secretpassword
