@@ -1,2 +1,2 @@
-cl src/*.cpp -Iinclude -o SecureVault_CLI
+cl src/*.cpp -Iinclude -o build/SecureVault_CLI
 .\SecureVault_CLI.exe
