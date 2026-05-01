@@ -5,12 +5,12 @@
 #include "PasswordChecker.h"
 #include <thread>
 #include <chrono>
-#include <conio.h>
 using namespace std;
 
 auto lastActive = chrono::system_clock::now();
 
-void inactivityMonitor() {
+void inactivityMonitor()
+{
     while (true)
     {
         this_thread::sleep_for(5s);
@@ -83,21 +83,50 @@ int main()
         if (choice == 1)
         {
             string site, pass;
+            int subChoice;
 
             cout << "Site: ";
             cin >> site;
             cin.ignore(1000, '\n');
             lastActive = chrono::system_clock::now();
-            cout << "Password: ";
-            getline(cin,pass);
-            if(pass.empty()){
-                cout<<"Invalid Password\n";
-                continue;
-            }
+
+            cout << "1. Generate Password\n";
+            cout << "2. Enter Custom Password\n";
+            cout << "Choice: ";
+            cin >> subChoice;
             lastActive = chrono::system_clock::now();
+
+            if (subChoice == 1)
+            {
+                int len;
+                cout << "Password Length: ";
+                cin >> len;
+                lastActive = chrono::system_clock::now();
+
+                pass = generator.generate(len);
+                cout << "Generated Password: " << pass << endl;
+            }
+            else if (subChoice == 2)
+            {
+                cin.ignore(1000, '\n');
+                cout << "Enter Password: ";
+                getline(cin, pass);
+                lastActive = chrono::system_clock::now();
+
+                if (pass.empty())
+                {
+                    cout << "Invalid Password\n";
+                    return 0;
+                }
+            }
+            else
+            {
+                cout << "Invalid choice\n";
+                return 0;
+            }
+
             vault.addPassword(site, pass);
         }
-
         else if (choice == 2)
         {
             int len;

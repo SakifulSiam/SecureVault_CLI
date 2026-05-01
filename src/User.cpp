@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <conio.h>
+#include "conio_cross.h"
 #include "User.h"
 
 using namespace std;
@@ -10,7 +10,7 @@ bool User::registerUser() {
     cout << "Enter username: ";
     cin >> username;
     
-    cout << "Enter password: ";
+    cout << "Enter password: " << flush;
     password = getPassword();
     
     ofstream file("data/users.txt", ios::app);
@@ -34,7 +34,7 @@ bool User::login() {
     
     while (file >> fileUser >> filePass) {
         if (fileUser == inputUser && filePass == inputPass) {
-            username = inputUser; // 👈 STORE IT
+            username = inputUser;
             cout << "Login successful!\n";
             return true;
         }
@@ -52,21 +52,23 @@ string User::getPassword() {
     string password;
     char ch;
 
-    while (true) {
-        ch = _getch();
+    clear_stdin_buffer(); 
 
-        if (ch == 13) { // Enter key
+    while (true) {
+        ch = getch_cross();
+
+        if (ch == KEY_ENTER) {
             break;
         }
-        else if (ch == 8) { // Backspace
+        else if (ch == KEY_BACKSPACE) {
             if (!password.empty()) {
                 password.pop_back();
-                cout << "\b \b"; // erase last '*'
+                cout << "\b \b" << flush;
             }
         }
-        else {
+        else if (isprint(static_cast<unsigned char>(ch))) {
             password.push_back(ch);
-            cout << '*';
+            cout << '*' << flush;
         }
     }
 
