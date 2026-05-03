@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Vault.h"
+#include "FileVault.h"
 #include "User.h"
 #include "PasswordGenerator.h"
 #include "PasswordChecker.h"
@@ -63,7 +64,7 @@ int main()
         return 0;
     }
 
-    Vault vault(user.getUsername(), user.getPassword());
+    shared_ptr<Vault> vault = make_shared<FileVault>(user.getUsername(), user.getPassword());
     PasswordGenerator generator;
     PasswordChecker checker;
 
@@ -125,19 +126,14 @@ int main()
                 return 0;
             }
 
-            vault.addPassword(site, pass);
+            vault->addPassword(site, pass);
         }
         else if (choice == 2)
         {
-            int len;
-
-            cout << "Length: ";
-            cin >> len;
+            cin >> generator;
             lastActive = chrono::system_clock::now();
 
-            string generated = generator.generate(len);
-
-            cout << "Generated Password: " << generated << endl;
+            cout << generator << endl;
         }
 
         else if (choice == 3)
@@ -154,7 +150,7 @@ int main()
 
         else if (choice == 4)
         {
-            vault.viewPasswords();
+            vault->viewPasswords();
         }
 
         else if (choice == 5)

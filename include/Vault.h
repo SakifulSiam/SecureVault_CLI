@@ -4,13 +4,11 @@
 #include "EncryptionEngine.h"
 
 class Vault {
-private:
+protected:
     vector<PasswordEntry> entries;
-    string filename;
     shared_ptr<EncryptionEngine> crypto;
 public:
-    Vault(string username, string password);
-    bool doesSiteExist(string name);
-    void addPassword(string site, string password);
-    void viewPasswords();
+    virtual bool doesSiteExist(string name);
+    virtual void addPassword(string site, string password) = 0;
+    virtual void viewPasswords();
 };

@@ -1,7 +1,9 @@
 #include "PasswordGenerator.h"
 #include <random>
 
-string PasswordGenerator::generate(int length) {
+int PasswordGenerator::default_len = 8;
+
+string PasswordGenerator::generate(int length) const {
     string chars =
         "abcdefghijklmnopqrstuvwxyz"
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
