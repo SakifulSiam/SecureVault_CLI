@@ -9,13 +9,25 @@ using namespace std;
 bool User::registerUser() {
     cout << "Enter username: ";
     cin >> username;
-    
+
+    // Check if username already exists
+    {
+        ifstream checkFile("data/users.txt");
+        string fileUser, fileHash;
+        while (checkFile >> fileUser >> fileHash) {
+            if (fileUser == username) {
+                cout << "Error: User '" << username << "' is already registered!\n";
+                return false;
+            }
+        }
+    }
+
     cout << "Enter password: " << flush;
     password = inputPassword();
     passwordHash = hash(password);
     ofstream file("data/users.txt", ios::app);
     file << username << " " << passwordHash << endl;
-    
+
     cout << "User registered successfully!\n";
     return true;
 }

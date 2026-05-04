@@ -19,9 +19,16 @@ bool Vault::doesSiteExist(std::string name)
 
 void Vault::viewPasswords()
 {
+    if (entries.empty()) {
+        cout << "No passwords stored yet.\n";
+        return;
+    }
+    cout << "\n--- Stored Passwords ---\n";
     for (auto &e : entries)
     {
-        cout << e.site << " : "
-             << crypto->decrypt(e.password) << endl;
+        cout << "Site     : " << e.site << "\n"
+             << "Username : [hashed] " << e.siteUsername << "\n"
+             << "Password : " << crypto->decrypt(e.password) << "\n"
+             << "------------------------\n";
     }
 }

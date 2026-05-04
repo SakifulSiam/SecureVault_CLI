@@ -1,0 +1,10 @@
+^C:\DEV\OOP_PROJECT\SECUREVAULT_CLI\BUILD\CMAKEFILES\E39117CD5A9293EA1098EDF56D55DBA3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dev/OOP_Project/SecureVault_CLI -BC:/Dev/OOP_Project/SecureVault_CLI/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Dev/OOP_Project/SecureVault_CLI/build/SecureVault.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

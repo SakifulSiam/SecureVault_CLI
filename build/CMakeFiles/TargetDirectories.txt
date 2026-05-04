@@ -1,0 +1,3 @@
+C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/SecureVault.dir
+C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/ALL_BUILD.dir
+C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/ZERO_CHECK.dir

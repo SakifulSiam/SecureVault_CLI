@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include "Vault.h"
 #include "FileVault.h"
 #include "User.h"
@@ -39,9 +40,11 @@ int main()
 
     if (choice == 1)
     {
-        user.registerUser();
+        if (!user.registerUser()) {
+            return 0;  // duplicate username — exit cleanly
+        }
         cout << "You are now logged in.\n";
-        success = true; // skip login
+        success = true;
     }
     else if (choice == 2)
     {
@@ -83,11 +86,16 @@ int main()
 
         if (choice == 1)
         {
-            string site, pass;
+            string site, siteUsername, pass;
             int subChoice;
 
             cout << "Site: ";
             cin >> site;
+            cin.ignore(1000, '\n');
+            lastActive = chrono::system_clock::now();
+
+            cout << "Username for this site: ";
+            cin >> siteUsername;
             cin.ignore(1000, '\n');
             lastActive = chrono::system_clock::now();
 
@@ -126,7 +134,7 @@ int main()
                 return 0;
             }
 
-            vault->addPassword(site, pass);
+            vault->addPassword(site, siteUsername, pass);
         }
         else if (choice == 2)
         {

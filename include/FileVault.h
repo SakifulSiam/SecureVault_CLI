@@ -9,5 +9,5 @@ private:
     string filename;
 public:
     FileVault(string username, string password);
-    void addPassword(string site, string password) override;
+    void addPassword(string site, string siteUsername, string password) override;
 };

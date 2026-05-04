@@ -15,18 +15,18 @@ string PasswordChecker::checkStrength(string password) {
     }
 
     // 1. Minimum Length Requirement
-    if (len < 6) return "Weak";
+    if (len < 6) return toString("Weak");
 
     // 2. Strong Criteria: Complexity AND Length
     if (len >= 10 && upper && lower && digit && symbol) {
-        return "Strong";
+        return toString("Strong");
     }
 
     // 3. Medium Criteria: Requires at least two different types of characters
     int types = (upper > 0) + (lower > 0) + (digit > 0) + (symbol > 0);
     if (len >= 8 && types >= 2) {
-        return "Medium";
+        return toString("Medium");
     }
 
-    return "Weak"; 
+    return toString("Weak");
 }
