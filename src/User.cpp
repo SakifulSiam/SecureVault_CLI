@@ -1,18 +1,30 @@
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 #include "conio_cross.h"
 #include "User.h"
 
 using namespace std;
+namespace fs = std::filesystem;
 
+// Returns absolute path to data/ dir beside the binary (creates it if missing)
+static fs::path dataDir() {
+    fs::path dir = fs::current_path() / "data";
+    fs::create_directories(dir);
+    return dir;
+}
+
+static fs::path usersFile() {
+    return dataDir() / "users.txt";
+}
 
 bool User::registerUser() {
     cout << "Enter username: ";
     cin >> username;
 
-    // Check if username already exists
+    // Duplicate check
     {
-        ifstream checkFile("data/users.txt");
+        ifstream checkFile(usersFile());
         string fileUser, fileHash;
         while (checkFile >> fileUser >> fileHash) {
             if (fileUser == username) {
@@ -25,26 +37,42 @@ bool User::registerUser() {
     cout << "Enter password: " << flush;
     password = inputPassword();
     passwordHash = hash(password);
-    ofstream file("data/users.txt", ios::app);
-    file << username << " " << passwordHash << endl;
+
+    ofstream file(usersFile(), ios::app);
+    if (!file.is_open()) {
+        cout << "Error: Could not open users file for writing!\n";
+        cout << "Path tried: " << usersFile() << "\n";
+        return false;
+    }
+    file << username << " " << passwordHash << "\n";
+    file.flush();
+    if (file.fail()) {
+        cout << "Error: Write to disk failed!\n";
+        return false;
+    }
 
     cout << "User registered successfully!\n";
+    cout << "[Info] Data saved to: " << usersFile() << "\n";
     return true;
 }
 
 bool User::login() {
     string inputUser, inputPass;
-    
+
     cout << "Username: ";
     cin >> inputUser;
-    
+
     cout << "Password: " << flush;
     inputPass = inputPassword();
     passwordHash = hash(inputPass);
-    
-    ifstream file("data/users.txt");
+
+    ifstream file(usersFile());
+    if (!file.is_open()) {
+        cout << "Error: No registered users found. Please register first.\n";
+        return false;
+    }
+
     string fileUser, filePass;
-    
     while (file >> fileUser >> filePass) {
         if (fileUser == inputUser && filePass == to_string(passwordHash)) {
             username = inputUser;
@@ -62,11 +90,15 @@ string User::getUsername() {
     return username;
 }
 
+string User::getDataDir() {
+    return dataDir().string();
+}
+
 string User::inputPassword() {
     string password;
     char ch;
 
-    clear_stdin_buffer(); 
+    clear_stdin_buffer();
 
     while (true) {
         ch = getch_cross();

@@ -27,7 +27,7 @@ void Vault::viewPasswords()
     for (auto &e : entries)
     {
         cout << "Site     : " << e.site << "\n"
-             << "Username : [hashed] " << e.siteUsername << "\n"
+             << "Username : " << e.siteUsername << "\n"
              << "Password : " << crypto->decrypt(e.password) << "\n"
              << "------------------------\n";
     }

@@ -13,6 +13,7 @@ public:
     bool registerUser();
     bool login();
     string getUsername();
+    string getDataDir();
     string getPassword() {
         return password;
     }
@@ -22,7 +23,7 @@ public:
         unsigned long long hash = 5381;
         unsigned long long salt = 131;
 
-        for (int i = 0; i < password.length(); i++)
+        for (int i = 0; i < (int)password.length(); i++)
         {
             char c = password[i];
             hash = hash * salt + (c + i * 7);

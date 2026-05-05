@@ -123,18 +123,9 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Ensuring data/ directory exists beside the executable	Copying data/users.txt to build directory</Message>
+      <Message>Ensuring data/ directory exists beside the executable</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Dev/OOP_Project/SecureVault_CLI/build/Debug/data
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Dev/OOP_Project/SecureVault_CLI/data/users.txt C:/Dev/OOP_Project/SecureVault_CLI/build/Debug/data/users.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -201,18 +192,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Ensuring data/ directory exists beside the executable	Copying data/users.txt to build directory</Message>
+      <Message>Ensuring data/ directory exists beside the executable</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Dev/OOP_Project/SecureVault_CLI/build/Release/data
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Dev/OOP_Project/SecureVault_CLI/data/users.txt C:/Dev/OOP_Project/SecureVault_CLI/build/Release/data/users.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -279,18 +261,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Ensuring data/ directory exists beside the executable	Copying data/users.txt to build directory</Message>
+      <Message>Ensuring data/ directory exists beside the executable</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Dev/OOP_Project/SecureVault_CLI/build/MinSizeRel/data
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Dev/OOP_Project/SecureVault_CLI/data/users.txt C:/Dev/OOP_Project/SecureVault_CLI/build/MinSizeRel/data/users.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -356,18 +329,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Ensuring data/ directory exists beside the executable	Copying data/users.txt to build directory</Message>
+      <Message>Ensuring data/ directory exists beside the executable</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Dev/OOP_Project/SecureVault_CLI/build/RelWithDebInfo/data
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Dev/OOP_Project/SecureVault_CLI/data/users.txt C:/Dev/OOP_Project/SecureVault_CLI/build/RelWithDebInfo/data/users.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

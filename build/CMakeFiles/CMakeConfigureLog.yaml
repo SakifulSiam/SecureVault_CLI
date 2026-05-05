@@ -80,7 +80,7 @@ events:
       The output was:
       0
       MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-      Build started 5/4/2026 10:09:08 PM.
+      Build started 5/5/2026 1:23:07 AM.
       
       Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -109,7 +109,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.29
+      Time Elapsed 00:00:01.24
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -912,8 +912,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-ayxf3m"
-      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-ayxf3m"
+      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-n8oh4w"
+      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-n8oh4w"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -924,39 +924,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-ayxf3m'
+        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-n8oh4w'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e19fd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_85032.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 5/4/2026 10:09:10 PM.
+        Build started 5/5/2026 1:23:09 AM.
         
-        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ayxf3m\\cmTC_e19fd.vcxproj" on node 1 (default targets).
+        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n8oh4w\\cmTC_85032.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ayxf3m\\Debug\\".
-          Creating directory "cmTC_e19fd.dir\\Debug\\cmTC_e19fd.tlog\\".
+          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n8oh4w\\Debug\\".
+          Creating directory "cmTC_85032.dir\\Debug\\cmTC_85032.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e19fd.dir\\Debug\\cmTC_e19fd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e19fd.dir\\Debug\\cmTC_e19fd.tlog\\unsuccessfulbuild".
+          Creating "cmTC_85032.dir\\Debug\\cmTC_85032.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_85032.dir\\Debug\\cmTC_85032.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e19fd.dir\\Debug\\\\" /Fd"cmTC_e19fd.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_85032.dir\\Debug\\\\" /Fd"cmTC_85032.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e19fd.dir\\Debug\\\\" /Fd"cmTC_e19fd.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_85032.dir\\Debug\\\\" /Fd"cmTC_85032.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ayxf3m\\Debug\\cmTC_e19fd.exe" /INCREMENTAL /ILK:"cmTC_e19fd.dir\\Debug\\cmTC_e19fd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-ayxf3m/Debug/cmTC_e19fd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-ayxf3m/Debug/cmTC_e19fd.lib" /MACHINE:X64  /machine:x64 cmTC_e19fd.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_e19fd.vcxproj -> C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ayxf3m\\Debug\\cmTC_e19fd.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n8oh4w\\Debug\\cmTC_85032.exe" /INCREMENTAL /ILK:"cmTC_85032.dir\\Debug\\cmTC_85032.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-n8oh4w/Debug/cmTC_85032.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-n8oh4w/Debug/cmTC_85032.lib" /MACHINE:X64  /machine:x64 cmTC_85032.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_85032.vcxproj -> C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n8oh4w\\Debug\\cmTC_85032.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e19fd.dir\\Debug\\cmTC_e19fd.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e19fd.dir\\Debug\\cmTC_e19fd.tlog\\cmTC_e19fd.lastbuildstate".
-        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ayxf3m\\cmTC_e19fd.vcxproj" (default targets).
+          Deleting file "cmTC_85032.dir\\Debug\\cmTC_85032.tlog\\unsuccessfulbuild".
+          Touching "cmTC_85032.dir\\Debug\\cmTC_85032.tlog\\cmTC_85032.lastbuildstate".
+        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n8oh4w\\cmTC_85032.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.90
+        Time Elapsed 00:00:00.88
         
       exitCode: 0
   -
@@ -994,12 +994,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "CMakeLists.txt:25 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-xl7vpd"
-      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-xl7vpd"
+      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-sf2iiv"
+      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-sf2iiv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1009,39 +1009,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-xl7vpd'
+        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-sf2iiv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7b693.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d4eed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 5/4/2026 10:09:11 PM.
+        Build started 5/5/2026 1:23:11 AM.
         
-        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\cmTC_7b693.vcxproj" on node 1 (default targets).
+        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\cmTC_d4eed.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\Debug\\".
-          Creating directory "cmTC_7b693.dir\\Debug\\cmTC_7b693.tlog\\".
+          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\Debug\\".
+          Creating directory "cmTC_d4eed.dir\\Debug\\cmTC_d4eed.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7b693.dir\\Debug\\cmTC_7b693.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_7b693.dir\\Debug\\cmTC_7b693.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d4eed.dir\\Debug\\cmTC_d4eed.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d4eed.dir\\Debug\\cmTC_d4eed.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_7b693.dir\\Debug\\\\" /Fd"cmTC_7b693.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d4eed.dir\\Debug\\\\" /Fd"cmTC_d4eed.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_7b693.dir\\Debug\\\\" /Fd"cmTC_7b693.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d4eed.dir\\Debug\\\\" /Fd"cmTC_d4eed.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\src.cxx"
           src.cxx
-        C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\cmTC_7b693.vcxproj]
-        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\cmTC_7b693.vcxproj" (default targets) -- FAILED.
+        C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\cmTC_d4eed.vcxproj]
+        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\cmTC_d4eed.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\cmTC_7b693.vcxproj" (default target) (1) ->
+        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\cmTC_d4eed.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xl7vpd\\cmTC_7b693.vcxproj]
+          C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf2iiv\\cmTC_d4eed.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.53
+        Time Elapsed 00:00:00.57
         
       exitCode: 1
   -
@@ -1050,12 +1050,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:238 (_threads_check_lib)"
-      - "CMakeLists.txt:25 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-7m2aa4"
-      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-7m2aa4"
+      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-oa9bc8"
+      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-oa9bc8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1065,36 +1065,36 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-7m2aa4'
+        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-oa9bc8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_12596.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d2936.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 5/4/2026 10:09:12 PM.
+        Build started 5/5/2026 1:23:12 AM.
         
-        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\cmTC_12596.vcxproj" on node 1 (default targets).
+        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\cmTC_d2936.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\Debug\\".
-          Creating directory "cmTC_12596.dir\\Debug\\cmTC_12596.tlog\\".
+          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\Debug\\".
+          Creating directory "cmTC_d2936.dir\\Debug\\cmTC_d2936.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_12596.dir\\Debug\\cmTC_12596.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_12596.dir\\Debug\\cmTC_12596.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d2936.dir\\Debug\\cmTC_d2936.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d2936.dir\\Debug\\cmTC_d2936.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_12596.dir\\Debug\\\\" /Fd"cmTC_12596.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d2936.dir\\Debug\\\\" /Fd"cmTC_d2936.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_12596.dir\\Debug\\\\" /Fd"cmTC_12596.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d2936.dir\\Debug\\\\" /Fd"cmTC_d2936.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\Debug\\cmTC_12596.exe" /INCREMENTAL /ILK:"cmTC_12596.dir\\Debug\\cmTC_12596.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-7m2aa4/Debug/cmTC_12596.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-7m2aa4/Debug/cmTC_12596.lib" /MACHINE:X64  /machine:x64 cmTC_12596.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\cmTC_12596.vcxproj]
-        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\cmTC_12596.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\Debug\\cmTC_d2936.exe" /INCREMENTAL /ILK:"cmTC_d2936.dir\\Debug\\cmTC_d2936.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-oa9bc8/Debug/cmTC_d2936.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-oa9bc8/Debug/cmTC_d2936.lib" /MACHINE:X64  /machine:x64 cmTC_d2936.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\cmTC_d2936.vcxproj]
+        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\cmTC_d2936.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\cmTC_12596.vcxproj" (default target) (1) ->
+        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\cmTC_d2936.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m2aa4\\cmTC_12596.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa9bc8\\cmTC_d2936.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -1108,12 +1108,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:239 (_threads_check_lib)"
-      - "CMakeLists.txt:25 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-lcv4dh"
-      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-lcv4dh"
+      source: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-nqisvs"
+      binary: "C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-nqisvs"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1123,41 +1123,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-lcv4dh'
+        Change Dir: 'C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-nqisvs'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_43707.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7d414.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 5/4/2026 10:09:13 PM.
+        Build started 5/5/2026 1:23:13 AM.
         
-        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\cmTC_43707.vcxproj" on node 1 (default targets).
+        Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\cmTC_7d414.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\Debug\\".
-          Creating directory "cmTC_43707.dir\\Debug\\cmTC_43707.tlog\\".
+          Creating directory "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\Debug\\".
+          Creating directory "cmTC_7d414.dir\\Debug\\cmTC_7d414.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_43707.dir\\Debug\\cmTC_43707.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_43707.dir\\Debug\\cmTC_43707.tlog\\unsuccessfulbuild".
+          Creating "cmTC_7d414.dir\\Debug\\cmTC_7d414.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7d414.dir\\Debug\\cmTC_7d414.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_43707.dir\\Debug\\\\" /Fd"cmTC_43707.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_7d414.dir\\Debug\\\\" /Fd"cmTC_7d414.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_43707.dir\\Debug\\\\" /Fd"cmTC_43707.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_7d414.dir\\Debug\\\\" /Fd"cmTC_7d414.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\Debug\\cmTC_43707.exe" /INCREMENTAL /ILK:"cmTC_43707.dir\\Debug\\cmTC_43707.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-lcv4dh/Debug/cmTC_43707.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-lcv4dh/Debug/cmTC_43707.lib" /MACHINE:X64  /machine:x64 cmTC_43707.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\cmTC_43707.vcxproj]
-        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\cmTC_43707.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\Debug\\cmTC_7d414.exe" /INCREMENTAL /ILK:"cmTC_7d414.dir\\Debug\\cmTC_7d414.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-nqisvs/Debug/cmTC_7d414.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Dev/OOP_Project/SecureVault_CLI/build/CMakeFiles/CMakeScratch/TryCompile-nqisvs/Debug/cmTC_7d414.lib" /MACHINE:X64  /machine:x64 cmTC_7d414.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\cmTC_7d414.vcxproj]
+        Done Building Project "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\cmTC_7d414.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\cmTC_43707.vcxproj" (default target) (1) ->
+        "C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\cmTC_7d414.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcv4dh\\cmTC_43707.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Dev\\OOP_Project\\SecureVault_CLI\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nqisvs\\cmTC_7d414.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.67
+        Time Elapsed 00:00:00.69
         
       exitCode: 1
 ...
